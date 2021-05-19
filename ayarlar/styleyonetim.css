@@ -1,0 +1,4145 @@
+ #PanoAlani{
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;/* dısarı tasmasın*/
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: top;
+}
+.PanoDengelemeAlani{
+  position: relative;
+  display: block;
+  float: left;
+  width:-webkit-calc(100% + 20px); 
+  width: -moz-calc(100% + 20px);
+  width: -o-calc(100% + 20px);
+  width: -ms-calc(100% + 20px);
+  min-width:-webkit-calc(100% + 20px); 
+  min-width: -moz-calc(100% + 20px);
+  min-width: -o-calc(100% + 20px);
+  min-width: -ms-calc(100% + 20px);
+  max-width:-webkit-calc(100% + 20px); 
+  max-width: -moz-calc(100% + 20px);
+  max-width: -o-calc(100% + 20px);
+  max-width: -ms-calc(100% + 20px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  left: -10px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  background-color: #f1dfeb;
+  text-align: center;
+  vertical-align: top;
+}
+.PanoSinirlamaAlani{
+  display: inline-block;
+  float: left;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding: 5px;
+  margin-top: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  overflow: hidden;
+  border:none;
+  border: 1px solid #521137;
+  outline: none;
+  background-color: #f1dfeb;
+  vertical-align: top;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .PanoSinirlamaAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(33.33% - 22px);/* sağ sol padding ve margin=20 +2 border*/
+    width: -moz-calc(33.33% - 22px); /*mozillya göre*/
+    width: -o-calc(33.33% - 22px);/*operaya göre*/
+    width: -ms-calc(33.33% - 22px);
+    width: calc(33.33% - 22px);
+    min-width: -webkit-calc(33.33% - 22px);
+    min-width: -moz-calc(33.33% - 22px); /*mozillya göre*/
+    min-width: -o-calc(33.33% - 22px);/*operaya göre*/
+    min-width: -ms-calc(33.33% - 22px);
+    min-width: calc(33.33% - 22px);
+    max-width: -webkit-calc(33.33% - 22px);
+    max-width: -moz-calc(33.33% - 22px); /*mozillya göre*/
+    max-width: -o-calc(33.33% - 22px);/*operaya göre*/
+    max-width: -ms-calc(33.33% - 22px);
+    max-width: calc(33.33% - 22px);
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .PanoSinirlamaAlani{ 
+    width: -webkit-calc(33.33% - 22px);
+    width: -moz-calc(33.33% - 22px); /*mozillya göre*/
+    width: -o-calc(33.33% - 22px);/*operaya göre*/
+    width: -ms-calc(33.33% - 22px);
+    width: calc(33.33% - 22px);
+    min-width: -webkit-calc(33.33% - 22px);
+    min-width: -moz-calc(33.33% - 22px); /*mozillya göre*/
+    min-width: -o-calc(33.33% - 22px);/*operaya göre*/
+    min-width: -ms-calc(33.33% - 22px);
+    min-width: calc(33.33% - 22px);
+    max-width: -webkit-calc(33.33% - 22px);
+    max-width: -moz-calc(33.33% - 22px); /*mozillya göre*/
+    max-width: -o-calc(33.33% - 22px);/*operaya göre*/
+    max-width: -ms-calc(33.33% - 22px);
+    max-width: calc(33.33% - 22px);
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   .PanoSinirlamaAlani{ 
+    width: -webkit-calc(50% - 22px);
+    width: -moz-calc(50% - 22px); /*mozillya göre*/
+    width: -o-calc(50% - 22px);/*operaya göre*/
+    width: -ms-calc(50% - 22px);
+    width: calc(50% - 22px);
+    min-width: -webkit-calc(50% - 22px);
+    min-width: -moz-calc(50% - 22px); /*mozillya göre*/
+    min-width: -o-calc(50% - 22px);/*operaya göre*/
+    min-width: -ms-calc(50% - 22px);
+    min-width: calc(50% - 22px);
+    max-width: -webkit-calc(50% - 22px);
+    max-width: -moz-calc(50% - 22px); /*mozillya göre*/
+    max-width: -o-calc(50% - 22px);/*operaya göre*/
+    max-width: -ms-calc(50% - 22px);
+    max-width: calc(50% - 22px);
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   .PanoSinirlamaAlani{ 
+    width: -webkit-calc(50% - 22px);
+    width: -moz-calc(50% - 22px); /*mozillya göre*/
+    width: -o-calc(50% - 22px);/*operaya göre*/
+    width: -ms-calc(50% - 22px);
+    width: calc(50% - 22px);
+    min-width: -webkit-calc(50% - 22px);
+    min-width: -moz-calc(50% - 22px); /*mozillya göre*/
+    min-width: -o-calc(50% - 22px);/*operaya göre*/
+    min-width: -ms-calc(50% - 22px);
+    min-width: calc(50% - 22px);
+    max-width: -webkit-calc(50% - 22px);
+    max-width: -moz-calc(50% - 22px); /*mozillya göre*/
+    max-width: -o-calc(50% - 22px);/*operaya göre*/
+    max-width: -ms-calc(50% - 22px);
+    max-width: calc(50% - 22px);
+
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   .PanoSinirlamaAlani{ 
+    width: -webkit-calc(100% - 22px);
+    width: -moz-calc(100% - 22px); /*mozillya göre*/
+    width: -o-calc(100% - 22px);/*operaya göre*/
+    width: -ms-calc(100% - 22px);
+    width: calc(100% - 22px);
+    min-width: -webkit-calc(100% - 22px);
+    min-width: -moz-calc(100% - 22px); /*mozillya göre*/
+    min-width: -o-calc(100% - 22px);/*operaya göre*/
+    min-width: -ms-calc(100% - 22px);
+    min-width: calc(100% - 22px);
+    max-width: -webkit-calc(100% - 22px);
+    max-width: -moz-calc(100% - 22px); /*mozillya göre*/
+    max-width: -o-calc(100% - 22px);/*operaya göre*/
+    max-width: -ms-calc(100% - 22px);
+    max-width: calc(100% - 22px);
+   }
+}
+.PanoTabloları{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #f1dfeb;/*  bir alanın neryi kapladıgınıgörmek için arka engi ver!*/
+  text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+}
+.BaslikMetniSutunu{
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #f1dfeb;
+  vertical-align: top;
+  text-align: center;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 130%;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .BaslikMetniSutunu{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .BaslikMetniSutunu{ 
+    font-size: 13px;
+   }
+}
+@media only screen  and (max-width: 991px){ /* m cihaz için*/
+   .BaslikMetniSutunu{ 
+    font-size: 12px;
+   }
+}
+.IcerikMetniSutunu{
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #f1dfeb;
+  vertical-align: top;
+  text-align: center;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 200%;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .IcerikMetniSutunu{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .IcerikMetniSutunu{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m cihaz için*/
+   .IcerikMetniSutunu{ 
+    font-size: 12px;
+   }
+}
+
+/** YÖNETİCİ GİRİŞ.PHP BİÇİMLENDİRMESİ*/
+#TamSayfadaYuzlukAlan{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  vertical-align: top;
+  text-align: center;
+}
+#TamSayfaCerceveAlani{
+  position: relative;
+  display: block;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 0;
+  border:none;
+  outline: none;
+  background-color: #521137;/*f1dfeb*/
+ }
+ @media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #TamSayfaCerceveAlani{ /* body alanı için xl cihazda 14px olsun*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+   }
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+   #TamSayfaCerceveAlani{ 
+      padding-top: 5px;
+        padding-bottom: 5px;
+   }
+}
+#TamSayfaCerceveSinirlamaAlani{
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  border: 1px solid #521137;
+  outline: none;
+  background-color: #fff;
+  vertical-align: middle;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #TamSayfaCerceveSinirlamaAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(50% - 52px);
+    width: -moz-calc(50% - 52px); /*mozillya göre*/
+    width: -o-calc(50% - 52px);/*operaya göre*/
+    width: -ms-calc(50% - 52px);
+    width: calc(50% - 52px);
+    min-width: -webkit-calc(50% - 52px);
+    min-width: -moz-calc(50% - 52px); /*mozillya göre*/
+    min-width: -o-calc(50% - 52px);/*operaya göre*/
+    min-width: -ms-calc(50% - 52px);
+    min-width: calc(50% - 52px);
+    max-width: -webkit-calc(50% - 52px);
+    max-width: -moz-calc(50% - 52px); /*mozillya göre*/
+    max-width: -o-calc(50% - 52px);/*operaya göre*/
+    max-width: -ms-calc(50% - 52px);
+    max-width: calc(50% - 52px);/* 12 idi 20 20 de padding verdik burada da 20=52 */
+    padding:20px;
+
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #TamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 48px);/* 18 + 18+ 12=48*/
+    width: -moz-calc(100% - 48px); /*mozillya göre*/
+    width: -o-calc(100% - 48px);/*operaya göre*/
+    width: -ms-calc(100% - 48px);
+    width: calc(100% - 48px);
+    min-width: -webkit-calc(100% - 48px);
+    min-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    min-width: -o-calc(100% - 48px);/*operaya göre*/
+    min-width: -ms-calc(100% - 48px);
+    min-width: calc(100% - 48px);
+    max-width: -webkit-calc(100% - 48px);
+    max-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    max-width: -o-calc(100% - 48px);/*operaya göre*/
+    max-width: -ms-calc(100% - 48px);
+    max-width: calc(100% - 48px);
+     padding:18px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #TamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 44px);
+    width: -moz-calc(100% - 44px); /*mozillya göre*/
+    width: -o-calc(100% - 44px);/*operaya göre*/
+    width: -ms-calc(100% - 44px);
+    width: calc(100% - 44px);
+    min-width: -webkit-calc(100% - 44px);
+    min-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    min-width: -o-calc(100% - 44px);/*operaya göre*/
+    min-width: -ms-calc(100% - 44px);
+    min-width: calc(100% - 44px);
+    max-width: -webkit-calc(100% - 44px);
+    max-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    max-width: -o-calc(100% - 44px);/*operaya göre*/
+    max-width: -ms-calc(100% - 44px);
+    max-width: calc(100% - 44px);
+     padding:16px;
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   #TamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px); /*mozillya göre*/
+    width: -o-calc(100% - 40px);/*operaya göre*/
+    width: -ms-calc(100% - 40px);
+    width: calc(100% - 40px);
+    min-width: -webkit-calc(100% - 40px);
+    min-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    min-width: -o-calc(100% - 40px);/*operaya göre*/
+    min-width: -ms-calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    max-width: -webkit-calc(100% - 40px);
+    max-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    max-width: -o-calc(100% - 40px);/*operaya göre*/
+    max-width: -ms-calc(100% - 40px);
+    max-width: calc(100% - 40px);
+     padding:14px;
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   #TamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 36px);
+    width: -moz-calc(100% - 36px); /*mozillya göre*/
+    width: -o-calc(100% - 36px);/*operaya göre*/
+    width: -ms-calc(100% - 36px);
+    width: calc(100% - 36px);
+    min-width: -webkit-calc(100% - 36px);
+    min-width: -moz-calc(100% - 36px); /*mozillya göre*/
+    min-width: -o-calc(100% - 36px);/*operaya göre*/
+    min-width: -ms-calc(100% - 36px);
+    min-width: calc(100% - 36px);
+    max-width: -webkit-calc(100% - 36px);
+    max-width: -moz-calc(100% - 36px); /*mozillya göre*/
+    max-width: -o-calc(100% - 36px);/*operaya göre*/
+    max-width: -ms-calc(100% - 36px);
+    max-width: calc(100% - 36px);
+     padding:12px;
+   }
+}
+#TamSayfadaAltiCiziliBaslikAlani{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  border:none;
+  border-bottom: 1px solid #521137;
+  outline: none;
+  background-color: #fff;
+  vertical-align: top;
+  text-align: center;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #TamSayfadaAltiCiziliBaslikAlani{ /* body alanı için xl cihazda 14px olsun*/
+    padding-bottom: 20px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #TamSayfadaAltiCiziliBaslikAlani{ 
+    padding-bottom: 18px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #TamSayfadaAltiCiziliBaslikAlani{ 
+    padding-bottom: 16px;
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   #TamSayfadaAltiCiziliBaslikAlani{ 
+    padding-bottom: 14px;
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   #TamSayfadaAltiCiziliBaslikAlani{ 
+    padding-bottom: 12px;
+   }
+}
+
+#BaslikMetni{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  border:none;
+  overflow: hidden;
+  outline: none;
+  background-color: #fff;
+  vertical-align: top;
+  text-align: center;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 120%;
+  
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #BaslikMetni{ /* body alanı için xl cihazda 14px olsun*/
+    font-size:18px; 
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #BaslikMetni{ 
+    font-size:16px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m cihaz için*/
+   #BaslikMetni{ 
+    font-size:16px;
+   }
+}
+
+#AltBaslikMetni{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 10px;
+  border:none;
+  overflow: hidden;
+  outline: none;
+  background-color: #fff;
+  vertical-align: top;
+  text-align: center;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 120%;
+  
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #AltBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/
+    font-size:14px; 
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #AltBaslikMetni{ 
+    font-size:13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m cihaz için*/
+   #AltBaslikMetni{ 
+    font-size:12px;
+   }
+}
+
+.GirisFormSatirAlani{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+
+}
+.GirisFormTextInputAlani{
+  display: block;
+  float: left;
+   /* sol sağ boşluk 20  2 de border*/
+  width: -webkit-calc(100% - 22px);
+    width: -moz-calc(100% - 22px); /*mozillya göre*/
+    width: -o-calc(100% - 22px);/*operaya göre*/
+    width: -ms-calc(100% - 22px);
+    width: calc(100% - 22px);
+    min-width: -webkit-calc(100% - 22px);
+    min-width: -moz-calc(100% - 22px); /*mozillya göre*/
+    min-width: -o-calc(100% - 22px);/*operaya göre*/
+    min-width: -ms-calc(100% - 22px);
+    min-width: calc(100% - 22px);
+    max-width: -webkit-calc(100% - 22px);
+    max-width: -moz-calc(100% - 22px); /*mozillya göre*/
+    max-width: -o-calc(100% - 22px);/*operaya göre*/
+    max-width: -ms-calc(100% - 22px);
+    max-width: calc(100% - 22px);
+    height: 33px; /*ideal uzunluk*/
+    min-height: 33px;
+    max-height: 33px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f1dfeb;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 120%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .GirisFormTextInputAlani{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .GirisFormTextInputAlani{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .GirisFormTextInputAlani{ 
+    font-size: 12px;
+   }
+}
+
+.ButonKapsamaAlani{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+}
+.FormYesilButonu{
+  width: auto;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  margin: 0 auto;
+  margin-top:10px;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  border:none;
+  border:1px solid #4CAF58;
+  outline: none;
+  background-color: #4CAF58;
+  color: white;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 100%;
+  vertical-align: middle;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .FormYesilButonu{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .FormYesilButonu{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .FormYesilButonu{ 
+    font-size: 12px;
+   }
+}
+
+.FormYesilButonu:hover{
+  border:1px solid #1B4C1D;
+  
+}
+.FormTextInputAlani{
+  display: block;
+  float: left;
+  width: -webkit-calc(100% - 150px);
+    width: -moz-calc(100% - 150px); /*mozillya göre*/
+    width: -o-calc(100% - 150px);/*operaya göre*/
+    width: -ms-calc(100% - 150px);
+    width: calc(100% - 150px);
+    min-width: -webkit-calc(100% - 150px);
+    min-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    min-width: -o-calc(100% - 150px);/*operaya göre*/
+    min-width: -ms-calc(100% - 150px);
+    min-width: calc(100% - 150px);
+    max-width: -webkit-calc(100% - 150px);
+    max-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    max-width: -o-calc(100% - 150px);/*operaya göre*/
+    max-width: -ms-calc(100% - 150px);
+    max-width: calc(100% - 150px);
+    height: 33px; /*ideal uzunluk*/
+    min-height: 33px;
+    max-height: 33px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 120%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .FormTextInputAlani{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .FormTextInputAlani{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .FormTextInputAlani{ 
+    font-size: 12px;
+   }
+}
+
+/* havale bildirim biçimşnedirmesi */
+#BankaHesaplariTamSayfaCerceveAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0;
+  border:none;
+  outline: none;
+  background-color: #fff;/*f1dfeb*/
+ }
+ @media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #BankaHesaplariTamSayfaCerceveAlani{ /* body alanı için xl cihazda 14px olsun*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+   }
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+   #BankaHesaplariTamSayfaCerceveAlani{ 
+      padding-top: 5px;
+        padding-bottom: 5px;
+   }
+}
+#BankaHesaplariTamSayfaCerceveSinirlamaAlani{
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color:#fff;
+  vertical-align: middle;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #BankaHesaplariTamSayfaCerceveSinirlamaAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px); /*mozillya göre*/
+    width: -o-calc(100% - 50px);/*operaya göre*/
+    width: -ms-calc(100% - 50px);
+    width: calc(100% - 50px);
+    min-width: -webkit-calc(100% - 50px);
+    min-width: -moz-calc(100% - 50px); /*mozillya göre*/
+    min-width: -o-calc(100% - 50px);/*operaya göre*/
+    min-width: -ms-calc(100% - 50px);
+    min-width: calc(100% - 50px);
+    max-width: -webkit-calc(100% - 50px);
+    max-width: -moz-calc(100% - 50px); /*mozillya göre*/
+    max-width: -o-calc(100% - 50px);/*operaya göre*/
+    max-width: -ms-calc(100% - 50px);
+    max-width: calc(100% - 50px);/* 12 idi 20 20 de padding verdik burada da 20=52 */
+    padding:20px;
+
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #BankaHesaplariTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 48px);/* 18 + 18+ 12=48*/
+    width: -moz-calc(100% - 48px); /*mozillya göre*/
+    width: -o-calc(100% - 48px);/*operaya göre*/
+    width: -ms-calc(100% - 48px);
+    width: calc(100% - 48px);
+    min-width: -webkit-calc(100% - 48px);
+    min-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    min-width: -o-calc(100% - 48px);/*operaya göre*/
+    min-width: -ms-calc(100% - 48px);
+    min-width: calc(100% - 48px);
+    max-width: -webkit-calc(100% - 48px);
+    max-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    max-width: -o-calc(100% - 48px);/*operaya göre*/
+    max-width: -ms-calc(100% - 48px);
+    max-width: calc(100% - 48px);
+     padding:18px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #BankaHesaplariTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 44px);
+    width: -moz-calc(100% - 44px); /*mozillya göre*/
+    width: -o-calc(100% - 44px);/*operaya göre*/
+    width: -ms-calc(100% - 44px);
+    width: calc(100% - 44px);
+    min-width: -webkit-calc(100% - 44px);
+    min-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    min-width: -o-calc(100% - 44px);/*operaya göre*/
+    min-width: -ms-calc(100% - 44px);
+    min-width: calc(100% - 44px);
+    max-width: -webkit-calc(100% - 44px);
+    max-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    max-width: -o-calc(100% - 44px);/*operaya göre*/
+    max-width: -ms-calc(100% - 44px);
+    max-width: calc(100% - 44px);
+     padding:16px;
+   }
+}
+@media only screen  and (max-width: 767px){ /* s cihaz için*/
+   #BankaHesaplariTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px); /*mozillya göre*/
+    width: -o-calc(100% - 40px);/*operaya göre*/
+    width: -ms-calc(100% - 40px);
+    width: calc(100% - 40px);
+    min-width: -webkit-calc(100% - 40px);
+    min-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    min-width: -o-calc(100% - 40px);/*operaya göre*/
+    min-width: -ms-calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    max-width: -webkit-calc(100% - 40px);
+    max-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    max-width: -o-calc(100% - 40px);/*operaya göre*/
+    max-width: -ms-calc(100% - 40px);
+    max-width: calc(100% - 40px);
+     padding:14px;
+   }
+}
+
+.HaveleIslemlerAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px dashed #521137;
+  outline: none;
+  background-color:#fff;
+  text-align: left;
+  vertical-align: top;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .HaveleIslemlerAlani{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .HaveleIslemlerAlani{ 
+     font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m cihaz için*/
+   .HaveleIslemlerAlani{ 
+    font-size: 12px;
+
+   }
+}
+.HavaleIslemlerBaslik{
+  display: block;
+    width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    width: -moz-calc(100% - 10px);/* bnm ki 250 +5 +30=285*/
+    width: -o-calc(100% - 10px);
+    width: -ms-calc(100% - 10px);
+    min-width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    min-width: -moz-calc(100% - 10px);
+    min-width: -o-calc(100% - 10px);
+    min-width: -ms-calc(100% - 10px);
+    max-width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    max-width: -moz-calc(100% - 10px);
+    max-width: -o-calc(100% - 10px);
+    max-width: -ms-calc(100% - 10px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding: 10px 5px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+    background-color: #f1dfeb;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-decoration: none;
+  text-align: center;
+  line-height: 120%;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .HavaleIslemlerBaslik{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .HavaleIslemlerBaslik{ 
+     font-size: 13px;
+   }
+}
+@media only screen  and (max-width: 991px){ /* m cihaz için*/
+   .HavaleIslemlerBaslik{ 
+    font-size: 12px;
+
+   }
+}
+.UrunlerBaslik{
+  display: block;
+    width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    width: -moz-calc(100% - 10px);/* bnm ki 250 +5 +30=285*/
+    width: -o-calc(100% - 10px);
+    width: -ms-calc(100% - 10px);
+    min-width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    min-width: -moz-calc(100% - 10px);
+    min-width: -o-calc(100% - 10px);
+    min-width: -ms-calc(100% - 10px);
+    max-width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    max-width: -moz-calc(100% - 10px);
+    max-width: -o-calc(100% - 10px);
+    max-width: -ms-calc(100% - 10px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding: 10px 5px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+    background-color: #f1dfeb;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-decoration: none;
+  text-align: center;
+  line-height: 120%;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunlerBaslik{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .UrunlerBaslik{ 
+     font-size: 13px;
+   }
+}
+@media only screen  and (max-width: 991px){ /* m cihaz için*/
+   .UrunlerBaslik{ 
+    font-size: 12px;
+
+   }
+}
+.baslikSagTaraf{
+  float: left;
+}
+.baslikSolTaraf{
+  float: right;
+}
+.HavaleDetayAlani{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+    padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.HavaleBaslikMetni{
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-top:10px;
+  padding-bottom: 2px; 
+  padding-right: 10px;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 120%;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .HavaleBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/    
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .HavaleBaslikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .HavaleBaslikMetni{ 
+    font-size: 12px;
+   }
+}
+.HavaleIcerikMetni{
+  display: block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .HavaleIcerikMetni{ /* body alanı için xl cihazda 14px olsun*/
+    margin-top:9px;
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .HavaleIcerikMetni{ 
+    margin-top:9px;
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .HavaleIcerikMetni{ 
+     margin-top:9px;
+    font-size: 12px;
+   }
+}
+
+
+
+.HavaleSilIslemleri{
+   display: block;
+  float: right;
+  width:-webkit-calc(100% - 20px); /* padding left ve rigt 10 0 -20 o yüzden */
+    width: -moz-calc(100% - 20px);
+    width: -o-calc(100% - 20px);
+    width: -ms-calc(100% - 20px);
+    min-width:-webkit-calc(100% - 20px); 
+    min-width: -moz-calc(100% - 20px);
+    min-width: -o-calc(100% - 20px);
+    min-width: -ms-calc(100% - 20px);
+    max-width:-webkit-calc(100% - 20px); 
+    max-width: -moz-calc(100% - 20px);
+    max-width: -o-calc(100% - 20px);
+    max-width: -ms-calc(100% - 20px);
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.HavaleSilResim{
+   display: inline-block;
+   float: right;
+   width: 24px;
+   min-width: 24px;
+   max-width: 24px;
+   height: 24px;
+   min-height: 24px;
+   max-height: 24px;
+   margin:0 auto;
+      margin-right: 5px;
+   padding: 0;
+   border:none;
+   outline: none;
+   overflow: hidden;
+   text-decoration: none;
+   background-color: #fff;
+   text-align: left;
+   vertical-align: top;
+
+}
+.HavaleSilResim img{
+   display: block;
+   width: 24px;
+   min-width: 24px;
+   max-width: 24px;
+   height: 24px;
+   min-height: 24px;
+   max-height: 24px;
+   margin:0 auto;
+   padding: 0;
+   border:none;
+   outline: none;
+   overflow: hidden;
+   text-decoration: none;
+   background-color: #fff;
+   text-align: left;
+   vertical-align: top;
+
+}
+.HavaleSilMetni{
+  display: inline-block;
+  float: right;
+  width: auto;
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  margin:0 auto;
+  margin-right: 10px;
+    padding: 0;
+    border:none;
+   outline: none;
+   overflow: hidden;
+   text-decoration: none;
+   background-color: #fff;
+   text-align: left;
+   vertical-align: top;
+  text-decoration: none;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .HavaleSilMetni{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+    margin-top: 3px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .HavaleSilMetni{ 
+   font-size: 13px;
+   margin-top: 4px;
+   }
+}
+@media only screen  and (max-width: 991px){ /* m cihaz için*/
+   .HavaleSilMetni{ 
+    font-size: 12px;
+    margin-top: 5px;
+   }
+}
+
+.HavaleSilMetni a{
+  display: inline-block;
+  float: right;
+  width: auto;
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  margin:0 auto;
+    padding: 0;
+     border:none;
+   outline: none;
+   overflow: hidden;
+   text-decoration: none;
+   background-color: #fff;
+   text-align: left;
+   vertical-align: top;
+  text-decoration: none;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600;
+}
+
+/* SONUC SAYFALARI BİÇİMLENDİRMESİ*/
+#sonucSayfalariAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding:0;
+  border:none;
+  outline: none;
+  background-color: #521137;
+  vertical-align:top;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #sonucSayfalariAlani{ /* body alanı için xl cihazda 14px olsun*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+   }
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+   #sonucSayfalariAlani{ 
+      padding-top: 5px;
+        padding-bottom: 5px;
+   }
+}
+
+#sonucSayfalariSinirlandirma{
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  outline: none;
+  border:none;
+  border: 1px solid #521137;
+  background-color: #f1dfeb;
+  text-align: center;
+  vertical-align: middle;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #sonucSayfalariSinirlandirma{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(100% - 52px);
+    width: -moz-calc(100% - 52px); /*mozillya göre*/
+    width: -o-calc(100% - 52px);/*operaya göre*/
+    width: -ms-calc(100% - 52px);
+    width: calc(100% - 52px);
+    min-width: -webkit-calc(100% - 52px);
+    min-width: -moz-calc(100% - 52px); /*mozillya göre*/
+    min-width: -o-calc(100% - 52px);/*operaya göre*/
+    min-width: -ms-calc(100% - 52px);
+    min-width: calc(100% - 52px);
+    max-width: -webkit-calc(100% - 52px);
+    max-width: -moz-calc(100% - 52px); /*mozillya göre*/
+    max-width: -o-calc(100% - 52px);/*operaya göre*/
+    max-width: -ms-calc(100% - 52px);
+    max-width: calc(100% - 52px);
+
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #sonucSayfalariSinirlandirma{ 
+    width: -webkit-calc(100% - 48px);
+    width: -moz-calc(100% - 48px); /*mozillya göre*/
+    width: -o-calc(100% - 48px);/*operaya göre*/
+    width: -ms-calc(100% - 48px);
+    width: calc(100% - 48px);
+    min-width: -webkit-calc(100% - 48px);
+    min-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    min-width: -o-calc(100% - 48px);/*operaya göre*/
+    min-width: -ms-calc(100% - 48px);
+    min-width: calc(100% - 48px);
+    max-width: -webkit-calc(100% - 48px);
+    max-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    max-width: -o-calc(100% - 48px);/*operaya göre*/
+    max-width: -ms-calc(100% - 48px);
+    max-width: calc(100% - 48px);
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #sonucSayfalariSinirlandirma{ 
+    width: -webkit-calc(100% - 44px);
+    width: -moz-calc(100% - 44px); /*mozillya göre*/
+    width: -o-calc(100% - 44px);/*operaya göre*/
+    width: -ms-calc(100% - 44px);
+    width: calc(100% - 44px);
+    min-width: -webkit-calc(100% - 44px);
+    min-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    min-width: -o-calc(100% - 44px);/*operaya göre*/
+    min-width: -ms-calc(100% - 44px);
+    min-width: calc(100% - 44px);
+    max-width: -webkit-calc(100% - 44px);
+    max-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    max-width: -o-calc(100% - 44px);/*operaya göre*/
+    max-width: -ms-calc(100% - 44px);
+    max-width: calc(100% - 44px);
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   #sonucSayfalariSinirlandirma{ 
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px); /*mozillya göre*/
+    width: -o-calc(100% - 40px);/*operaya göre*/
+    width: -ms-calc(100% - 40px);
+    width: calc(100% - 40px);
+    min-width: -webkit-calc(100% - 40px);
+    min-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    min-width: -o-calc(100% - 40px);/*operaya göre*/
+    min-width: -ms-calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    max-width: -webkit-calc(100% - 40px);
+    max-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    max-width: -o-calc(100% - 40px);/*operaya göre*/
+    max-width: -ms-calc(100% - 40px);
+    max-width: calc(100% - 40px);
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   #sonucSayfalariSinirlandirma{ 
+    width: -webkit-calc(100% - 36px);
+    width: -moz-calc(100% - 36px); /*mozillya göre*/
+    width: -o-calc(100% - 36px);/*operaya göre*/
+    width: -ms-calc(100% - 36px);
+    width: calc(100% - 36px);
+    min-width: -webkit-calc(100% - 36px);
+    min-width: -moz-calc(100% - 36px); /*mozillya göre*/
+    min-width: -o-calc(100% - 36px);/*operaya göre*/
+    min-width: -ms-calc(100% - 36px);
+    min-width: calc(100% - 36px);
+    max-width: -webkit-calc(100% - 36px);
+    max-width: -moz-calc(100% - 36px); /*mozillya göre*/
+    max-width: -o-calc(100% - 36px);/*operaya göre*/
+    max-width: -ms-calc(100% - 36px);
+    max-width: calc(100% - 36px);
+   }
+}
+
+#sonucSayfalariBilgiAlani{
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: top;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #sonucSayfalariBilgiAlani{ /* body alanı için xl cihazda 14px olsun*/
+   width: -webkit-calc(100% - 52px);
+    width: -moz-calc(100% - 52px); /*mozillya göre*/
+    width: -o-calc(100% - 52px);/*operaya göre*/
+    width: -ms-calc(100% - 52px);
+    width: calc(100% - 52px);
+    min-width: -webkit-calc(100% - 52px);
+    min-width: -moz-calc(100% - 52px); /*mozillya göre*/
+    min-width: -o-calc(100% - 52px);/*operaya göre*/
+    min-width: -ms-calc(100% - 52px);
+    min-width: calc(100% - 52px);
+    max-width: -webkit-calc(100% - 52px);
+    max-width: -moz-calc(100% - 52px); /*mozillya göre*/
+    max-width: -o-calc(100% - 52px);/*operaya göre*/
+    max-width: -ms-calc(100% - 52px);
+    max-width: calc(100% - 52px);
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #sonucSayfalariBilgiAlani{ 
+    width: -webkit-calc(100% - 48px);
+    width: -moz-calc(100% - 48px); /*mozillya göre*/
+    width: -o-calc(100% - 48px);/*operaya göre*/
+    width: -ms-calc(100% - 48px);
+    width: calc(100% - 48px);
+    min-width: -webkit-calc(100% - 48px);
+    min-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    min-width: -o-calc(100% - 48px);/*operaya göre*/
+    min-width: -ms-calc(100% - 48px);
+    min-width: calc(100% - 48px);
+    max-width: -webkit-calc(100% - 48px);
+    max-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    max-width: -o-calc(100% - 48px);/*operaya göre*/
+    max-width: -ms-calc(100% - 48px);
+    max-width: calc(100% - 48px);
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #sonucSayfalariBilgiAlani{ 
+    width: -webkit-calc(100% - 44px);
+    width: -moz-calc(100% - 44px); /*mozillya göre*/
+    width: -o-calc(100% - 44px);/*operaya göre*/
+    width: -ms-calc(100% - 44px);
+    width: calc(100% - 44px);
+    min-width: -webkit-calc(100% - 44px);
+    min-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    min-width: -o-calc(100% - 44px);/*operaya göre*/
+    min-width: -ms-calc(100% - 44px);
+    min-width: calc(100% - 44px);
+    max-width: -webkit-calc(100% - 44px);
+    max-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    max-width: -o-calc(100% - 44px);/*operaya göre*/
+    max-width: -ms-calc(100% - 44px);
+    max-width: calc(100% - 44px);
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   #sonucSayfalariBilgiAlani{ 
+   width: -webkit-calc(100% - 40x);
+    width: -moz-calc(100% - 40px); /*mozillya göre*/
+    width: -o-calc(100% - 40px);/*operaya göre*/
+    width: -ms-calc(100% - 40px);
+    width: calc(100% - 40px);
+    min-width: -webkit-calc(100% - 40px);
+    min-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    min-width: -o-calc(100% - 40px);/*operaya göre*/
+    min-width: -ms-calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    max-width: -webkit-calc(100% - 40px);
+    max-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    max-width: -o-calc(100% - 40px);/*operaya göre*/
+    max-width: -ms-calc(100% - 40px);
+    max-width: calc(100% - 40px);
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   #sonucSayfalariBilgiAlani{ 
+    width: -webkit-calc(100% - 32px);
+    width: -moz-calc(100% - 32px); /*mozillya göre*/
+    width: -o-calc(100% - 32px);/*operaya göre*/
+    width: -ms-calc(100% - 32px);
+    width: calc(100% - 32px);
+    min-width: -webkit-calc(100% - 32px);
+    min-width: -moz-calc(100% - 32px); /*mozillya göre*/
+    min-width: -o-calc(100% - 32px);/*operaya göre*/
+    min-width: -ms-calc(100% - 32px);
+    min-width: calc(100% - 32px);
+    max-width: -webkit-calc(100% - 32px);
+    max-width: -moz-calc(100% - 32px); /*mozillya göre*/
+    max-width: -o-calc(100% - 32px);/*operaya göre*/
+    max-width: -ms-calc(100% - 32px);
+    max-width: calc(100% - 32px);
+   }
+}
+#sonucSayfalariResmi{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 184px;
+  min-height: 184px;
+  max-height: 184px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-decoration: none;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #sonucSayfalariResmi{ /* body alanı için xl cihazda 14px olsun*/
+    margin-top: 40px;
+    margin-bottom: 20px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #sonucSayfalariResmi{ 
+    margin-top: 35px;
+    margin-bottom: 18px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #sonucSayfalariResmi{ 
+    margin-top: 30px;
+    margin-bottom: 16px;
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   #sonucSayfalariResmi{ 
+    margin-top: 25px;
+    margin-bottom: 14px;
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   #sonucSayfalariResmi{ 
+    margin-top: 20px;
+    margin-bottom: 12px;
+   }
+}
+#sonucSayfalariResmi img{
+  display: block;
+  width: 184px;
+  min-width: 184px;
+  max-width: 184px;
+  height: 184px;
+  min-height: 184px;
+  max-height: 184px;
+  margin: 0 auto;
+  padding: 0;
+  border:none;
+  outline: none;
+}
+#sonucSayfalariBaslik{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family:"Comic Sans MS", cursive, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:1000; 
+  text-align: center;
+  text-decoration: none;
+  line-height: %120;
+  vertical-align: middle;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #sonucSayfalariBaslik{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+    margin-bottom: 20px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #sonucSayfalariBaslik{ 
+    font-size: 13px;
+    margin-bottom: 18px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #sonucSayfalariBaslik{ 
+    font-size: 12px;
+    margin-bottom: 16px;
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   #sonucSayfalariBaslik{ 
+    font-size: 12px;
+    margin-bottom: 14px;
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   #sonucSayfalariBaslik{ 
+    font-size: 12px;
+    margin-bottom: 12px;
+   }
+}
+#sonucSayfalariIcerik{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family:"Comic Sans MS", cursive, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:1000; 
+  text-align: center;
+  text-decoration: none;
+  line-height: %120;
+  vertical-align: middle;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #sonucSayfalariIcerik{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+    margin-bottom: 45px;
+    margin-top: 15px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #sonucSayfalariIcerik{ 
+    font-size: 13px;
+    margin-bottom: 40px;
+     margin-top: 15px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #sonucSayfalariIcerik{ 
+    font-size: 12px;
+    margin-bottom: 35px;
+     margin-top: 15px;
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   #sonucSayfalariIcerik{ 
+    font-size: 12px;
+    margin-bottom: 30px;
+     margin-top: 15px;
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   #sonucSayfalariIcerik{ 
+    font-size: 12px;
+    margin-bottom: 25px;
+     margin-top: 15px;
+   }
+}
+
+ #sonucSayfalariIcerik a{
+   font-family:"Comic Sans MS", cursive, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:1000; 
+  text-decoration: none;
+
+ }
+  #sonucSayfalariIcerik a:link, #sonucSayfalariIcerik a:active, #sonucSayfalariIcerik a:visited{
+   font-family:"Comic Sans MS", cursive, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:1000; 
+  text-decoration: none;
+
+ }
+ #sonucSayfalariIcerik a:hover{
+   font-family:"Comic Sans MS", cursive, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:1500; 
+  font-size: 15px;
+  text-decoration: underline;
+
+ }
+.BilgiAciklamaAlani{
+  display:block;
+  width:100%;
+    min-width: 100%;
+    max-width:100%;
+    height: auto;
+    margin: 0 auto;
+  padding:0;
+  padding-top: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 125%;
+  vertical-align: top;  
+  text-decoration: none;
+  color:#521137;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .BilgiAciklamaAlani{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .BilgiAciklamaAlani{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .BilgiAciklamaAlani{ 
+    font-size: 12px;
+   }
+}
+
+/*SİPARİŞLER ALANLARINN BİÇİMLNDİRİLMESİ**/
+#SiparislerTamSayfaCerceveAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0;
+  border:none;
+  outline: none;
+  background-color: #fff;/*f1dfeb*/
+ }
+ @media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #SiparislerTamSayfaCerceveAlani{ /* body alanı için xl cihazda 14px olsun*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+   }
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+   #SiparislerTamSayfaCerceveAlani{ 
+      padding-top: 5px;
+        padding-bottom: 5px;
+   }
+}
+#SiparislerTamSayfaCerceveSinirlamaAlani{
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color:#fff;
+  vertical-align: middle;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #SiparislerTamSayfaCerceveSinirlamaAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px); /*mozillya göre*/
+    width: -o-calc(100% - 50px);/*operaya göre*/
+    width: -ms-calc(100% - 50px);
+    width: calc(100% - 50px);
+    min-width: -webkit-calc(100% - 50px);
+    min-width: -moz-calc(100% - 50px); /*mozillya göre*/
+    min-width: -o-calc(100% - 50px);/*operaya göre*/
+    min-width: -ms-calc(100% - 50px);
+    min-width: calc(100% - 50px);
+    max-width: -webkit-calc(100% - 50px);
+    max-width: -moz-calc(100% - 50px); /*mozillya göre*/
+    max-width: -o-calc(100% - 50px);/*operaya göre*/
+    max-width: -ms-calc(100% - 50px);
+    max-width: calc(100% - 50px);/* 12 idi 20 20 de padding verdik burada da 20=52 */
+    padding:20px;
+
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #SiparislerTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 48px);/* 18 + 18+ 12=48*/
+    width: -moz-calc(100% - 48px); /*mozillya göre*/
+    width: -o-calc(100% - 48px);/*operaya göre*/
+    width: -ms-calc(100% - 48px);
+    width: calc(100% - 48px);
+    min-width: -webkit-calc(100% - 48px);
+    min-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    min-width: -o-calc(100% - 48px);/*operaya göre*/
+    min-width: -ms-calc(100% - 48px);
+    min-width: calc(100% - 48px);
+    max-width: -webkit-calc(100% - 48px);
+    max-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    max-width: -o-calc(100% - 48px);/*operaya göre*/
+    max-width: -ms-calc(100% - 48px);
+    max-width: calc(100% - 48px);
+     padding:18px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #SiparislerTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 44px);
+    width: -moz-calc(100% - 44px); /*mozillya göre*/
+    width: -o-calc(100% - 44px);/*operaya göre*/
+    width: -ms-calc(100% - 44px);
+    width: calc(100% - 44px);
+    min-width: -webkit-calc(100% - 44px);
+    min-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    min-width: -o-calc(100% - 44px);/*operaya göre*/
+    min-width: -ms-calc(100% - 44px);
+    min-width: calc(100% - 44px);
+    max-width: -webkit-calc(100% - 44px);
+    max-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    max-width: -o-calc(100% - 44px);/*operaya göre*/
+    max-width: -ms-calc(100% - 44px);
+    max-width: calc(100% - 44px);
+     padding:16px;
+   }
+}
+@media only screen  and (max-width: 767px){ /* s cihaz için*/
+   #SiparislerTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px); /*mozillya göre*/
+    width: -o-calc(100% - 40px);/*operaya göre*/
+    width: -ms-calc(100% - 40px);
+    width: calc(100% - 40px);
+    min-width: -webkit-calc(100% - 40px);
+    min-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    min-width: -o-calc(100% - 40px);/*operaya göre*/
+    min-width: -ms-calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    max-width: -webkit-calc(100% - 40px);
+    max-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    max-width: -o-calc(100% - 40px);/*operaya göre*/
+    max-width: -ms-calc(100% - 40px);
+    max-width: calc(100% - 40px);
+     padding:14px;
+   }
+}
+.SiparislerBaslik{
+  display: block;
+    width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    width: -moz-calc(100% - 10px);/* bnm ki 250 +5 +30=285*/
+    width: -o-calc(100% - 10px);
+    width: -ms-calc(100% - 10px);
+    min-width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    min-width: -moz-calc(100% - 10px);
+    min-width: -o-calc(100% - 10px);
+    min-width: -ms-calc(100% - 10px);
+    max-width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    max-width: -moz-calc(100% - 10px);
+    max-width: -o-calc(100% - 10px);
+    max-width: -ms-calc(100% - 10px);
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0;
+  padding: 10px 5px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+    background-color: #f1dfeb;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-decoration: none;
+  text-align: center;
+  line-height: 120%;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .SiparislerBaslik{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .SiparislerBaslik{ 
+     font-size: 13px;
+   }
+}
+@media only screen  and (max-width: 991px){ /* m cihaz için*/
+   .SiparislerBaslik{ 
+    font-size: 12px;
+
+   }
+}
+.SiparisDetayIslemlerAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px dashed #521137;
+  outline: none;
+  background-color:#fff;
+  text-align: left;
+  vertical-align: top;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .SiparisDetayIslemlerAlani{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .SiparisDetayIslemlerAlani{ 
+     font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m cihaz için*/
+   .SiparisDetayIslemlerAlani{ 
+    font-size: 12px;
+
+   }
+}
+.SiparisDetayAlani{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+    padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.SiparisDetayBaslikMetni{
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-top:10px;
+  padding-bottom: 2px; 
+  padding-right: 10px;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 120%;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .SiparisDetayBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/    
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .SiparisDetayBaslikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .SiparisDetayBaslikMetni{ 
+    font-size: 12px;
+   }
+}
+.SiparisDetayIcerikMetni{
+  display: block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .SiparisDetayIcerikMetni{ /* body alanı için xl cihazda 14px olsun*/
+    margin-top:9px;
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .SiparisDetayIcerikMetni{ 
+    margin-top:9px;
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .SiparisDetayIcerikMetni{ 
+     margin-top:9px;
+    font-size: 12px;
+   }
+}
+
+
+/*tamamlanan ürndetay.php biçimlendrmes*/
+.TamamlananUrunDetayResimAlani{
+  display: inline-block;
+  width: 66px;
+  min-width: 66px;
+  max-width: 66px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.TamamlananUrunDetayResimAlani img{
+  display: inline-block;
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 80px;
+  min-height: 80px;
+  max-height: 80px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.UrunDetaylari{
+   display: inline-block;
+   height:auto;  
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: top;
+}@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunDetaylari{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(100% - 72px);
+    width: -moz-calc(100% - 72px); /*mozillya göre*/
+    width: -o-calc(100% - 72px);/*operaya göre*/
+    width: -ms-calc(100% - 72px);
+    width: calc(100% - 72px);
+    min-width: -webkit-calc(100% - 72px);
+    min-width: -moz-calc(100% - 72px); /*mozillya göre*/
+    min-width: -o-calc(100% - 72px);/*operaya göre*/
+    min-width: -ms-calc(100% - 72px);
+    min-width: calc(100% - 72px);
+    max-width: -webkit-calc(100% - 72px);
+    max-width: -moz-calc(100% - 72px); /*mozillya göre*/
+    max-width: -o-calc(100% - 72px);/*operaya göre*/
+    max-width: -ms-calc(100% - 72px);
+    max-width: calc(100% - 72px);
+   }
+}
+@media only screen  and (max-width: 1199px){ /* l cihaz için*/
+   .UrunDetaylari{ 
+  width: -webkit-calc(100% - 78px);
+    width: -moz-calc(100% - 78px); /*mozillya göre*/
+    width: -o-calc(100% - 78px);/*operaya göre*/
+    width: -ms-calc(100% - 78px);
+    width: calc(100% - 78px);
+    min-width: -webkit-calc(100% - 78px);
+    min-width: -moz-calc(100% - 78px); /*mozillya göre*/
+    min-width: -o-calc(100% - 78px);/*operaya göre*/
+    min-width: -ms-calc(100% - 78px);
+    min-width: calc(100% - 78px);
+    max-width: -webkit-calc(100% - 78px);
+    max-width: -moz-calc(100% - 78px); /*mozillya göre*/
+    max-width: -o-calc(100% - 78px);/*operaya göre*/
+    max-width: -ms-calc(100% - 78px);
+    max-width: calc(100% - 78px);
+   }
+}
+@media only screen  and (max-width: 767px){ /* s cihaz için*/
+   .UrunDetaylari{ 
+  width: -webkit-calc(100% - 84px);
+    width: -moz-calc(100% - 84px); /*mozillya göre*/
+    width: -o-calc(100% - 84px);/*operaya göre*/
+    width: -ms-calc(100% - 84px);
+    width: calc(100% - 84px);
+    min-width: -webkit-calc(100% - 84px);
+    min-width: -moz-calc(100% - 84px); /*mozillya göre*/
+    min-width: -o-calc(100% - 84px);/*operaya göre*/
+    min-width: -ms-calc(100% - 84px);
+    min-width: calc(100% - 84px);
+    max-width: -webkit-calc(100% - 84px);
+    max-width: -moz-calc(100% - 84px); /*mozillya göre*/
+    max-width: -o-calc(100% - 84px);/*operaya göre*/
+    max-width: -ms-calc(100% - 84px);
+    max-width: calc(100% - 84px);
+   }
+}
+.SiparisDetayGonderikoduInputAlani{
+    display: block;
+    float: left;
+    height: 33px; /*ideal uzunluk*/
+    min-height: 33px;
+    max-height: 33px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 120%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .SiparisDetayGonderikoduInputAlani{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .SiparisDetayGonderikoduInputAlani{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .SiparisDetayGonderikoduInputAlani{ 
+    font-size: 12px;
+   }
+}
+
+
+
+
+.UrunDetayBaslikMetni{
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-right: 10px;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunDetayBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/    
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunDetayBaslikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunDetayBaslikMetni{ 
+    font-size: 12px;
+   }
+}
+
+.UrunDetayIcerikMetni{
+  display: block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;  
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+   color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunDetayIcerikMetni{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunDetayIcerikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunDetayIcerikMetni{ 
+    font-size: 12px;
+   }
+}
+.UrunDetayUstBaslikMetni{
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  margin-top:5px;
+  margin-bottom: 5px;
+  padding: 10px; 
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #f1dfeb;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 120%;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunDetayUstBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/    
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunDetayUstBaslikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunDetayUstBaslikMetni{ 
+    font-size: 12px;
+   }
+}
+.UrunDetayFormBaslikMetni{
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-top:10px;
+  padding-bottom: 2px; 
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 120%;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunDetayFormBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunDetayFormBaslikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunDetayFormBaslikMetni{ 
+    font-size: 12px;
+   }
+}
+.UrunDetayFormBaslikMetni a{
+  float: right;
+    width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 120%;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunDetayFormBaslikMetni a{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunDetayFormBaslikMetni a{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunDetayFormBaslikMetni a{ 
+    font-size: 12px;
+   }
+}
+
+/* ürünler biçimlendirme*/
+
+.TamSayfaSagSutunAramaAlani{
+   display: block;
+    width:-webkit-calc(100% - 30px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    width: -moz-calc(100% - 30px);/* bnm ki 250 +5 +30=285*/
+    width: -o-calc(100% - 30px);
+    width: -ms-calc(100% - 30px);
+    min-width:-webkit-calc(100% - 30px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    min-width: -moz-calc(100% - 30px);
+    min-width: -o-calc(100% - 30px);
+    min-width: -ms-calc(100% - 30px);
+    max-width:-webkit-calc(100% - 30px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    max-width: -moz-calc(100% - 30px);
+    max-width: -o-calc(100% - 30px);
+    max-width: -ms-calc(100% - 30px);
+   height: 35px;
+   min-height: 35px;
+   max-height: 35px;
+   margin:0 auto;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   padding: 0;
+   overflow: hidden;/*ölçütaşarsa sayfayı genişletme*/
+   border: 0;
+   outline: 0;
+   background-color: #fff;
+   text-align: center;
+   vertical-align: top;
+}
+
+.AramaButonuKapsamaAlani{
+    display: inline-block;/*yanına eleman alabilir*/
+    float: right;
+    width:68px;/* resim 24 + bosşıklar*/
+    min-width: 68px;
+    max-width: 68px;
+    height: 33px;
+    min-height: 33px;
+    max-height: 33px;
+    margin:0 auto;
+    padding: 0;
+    overflow: hidden;/*ölçütaşarsa sayfayı genişletme*/
+    border: 0;
+    outline: 0;
+    text-align: left;
+    background-color: #fff;
+
+}
+.AramaButonu{
+   display: block;
+   width: 68px;
+   min-width: 68px;
+   max-width: 68px;
+   height: 33px;
+    min-height: 33px;
+    max-height: 33px;
+   margin:0 auto;
+   padding:0;
+   overflow: hidden;
+   border: 1px solid #521137;
+   outline: none;
+   text-align: left;
+   text-decoration: none;
+   background: url(../img/buyutec.png);/*ayarlar klasöründen iki geri gittim img içinenresmi aldım*/
+   background-repeat: no-repeat;/*sadece bir tane resim gelsin diye*/
+   background-position: center left 24px; 
+}
+
+.AramaButonu:hover{
+  cursor: pointer;
+}
+
+.AramaInputKapsamaAlani{
+    display: inline-block;/*yanına eleman alabilir*/
+    float: right;
+    width: -webkit-calc(100% - 68px);
+    width: -moz-calc(100% - 68px); /*mozillya göre*/
+    width: -o-calc(100% - 68px);/*operaya göre*/
+    width: -ms-calc(100% - 68px);
+    width: calc(100% - 68px);
+    min-width: -webkit-calc(100% - 68px);
+    min-width: -moz-calc(100% - 68px); /*mozillya göre*/
+    min-width: -o-calc(100% - 68px);/*operaya göre*/
+    min-width: -ms-calc(100% - 68px);
+    min-width: calc(100% - 68px);
+    max-width: -webkit-calc(100% - 68px);
+    max-width: -moz-calc(100% - 68px); /*mozillya göre*/
+    max-width: -o-calc(100% - 68px);/*operaya göre*/
+    max-width: -ms-calc(100% - 68px);
+    max-width: calc(100% - 68px);
+    height: 33px;
+    min-height: 33px;
+    max-height: 33px;
+    text-decoration: none;
+    margin:0 auto;
+    padding: 0;
+    overflow: hidden;/*ölçütaşarsa sayfayı genişletmesin*/
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.AramaInput{
+    display:block;/*yanına eleman olamazr*/
+    float: left;
+     width: -webkit-calc(100% + 68px);
+    width: -moz-calc(100% + 68px); /*mozillya göre*/
+    width: -o-calc(100% + 68px);/*operaya göre*/
+    width: -ms-calc(100% + 68px);
+    width: calc(100% + 68px);
+    min-width: -webkit-calc(100% + 68px);
+    min-width: -moz-calc(100% + 68px); /*mozillya göre*/
+    min-width: -o-calc(100% + 68px);/*operaya göre*/
+    min-width: -ms-calc(100% + 68px);
+    min-width: calc(100% + 68px);
+    max-width: -webkit-calc(100% + 68px);
+    max-width: -moz-calc(100% + 68px); /*mozillya göre*/
+    max-width: -o-calc(100% + 68px);/*operaya göre*/
+    max-width: -ms-calc(100% + 68px);
+    max-width: calc(100% + 68px);
+    height: 33px;
+    min-height: 33px;
+    max-height: 33px;
+    margin:0;
+    padding: 0;
+    padding-left: 40px;/* resmi yerleştircem soru işareti resmi imlec resmin üstünden başlamamsı için resmin boyutu 19 onun iki katından biraz az verdim yani 36*/
+    padding-right: 10px;
+    background: url(../img/soru.png);/*ayarlar klasöründen iki geri gittim img içinenresmi aldım*/
+    background-repeat: no-repeat;/*sadece bir tane resim gelsin diye*/
+    background-position: center left 10px; 
+    border: 1px solid #646464;
+    outline: none;
+    text-align: left;
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  color: #521137;
+  line-height: 1.5; /* satır yuksekliği*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .AramaInput{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .AramaInput{ 
+     font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m cihaz için*/
+   .AramaInput{ 
+    font-size: 12px;
+
+   }
+}
+
+.UrunlerResimAlani{
+  display: inline-block;
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.UrunlerResimAlani img{
+  display: inline-block;
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 80px;
+  min-height: 80px;
+  max-height: 80px;
+  margin: 0 auto;
+  margin-top: 23px;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.SayfalamaAlaniKapsayicisi{
+   display: block;
+   width: 100%;
+   height: auto;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   text-align: center;
+   text-decoration: none;
+}
+
+.sayfalamaAlaniIciNumaraAlaniKapsayicisi{
+   display: block;
+   width: 100%;
+   height: auto;
+   margin: 0;
+      margin-top: 15px;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   text-align: center;
+   text-decoration: none;
+}
+
+.Sayfalamaaktif{
+   display: inline-block;
+   width: auto;
+   height: 30px;
+   margin:0px 0.5px;
+   padding: 5px 7.5px;
+   background: #f1dfeb;
+   border: 1px solid #521137;
+   outline: 0;
+   color: #521137;
+   font-weight: bold;
+   text-decoration: none;
+
+}
+
+.Sayfalamapasif{
+   display: inline-block;
+   width: auto;
+   height: 30px;
+   margin:0px 0.5px;
+   padding: 5px 7.5px;
+   background: #f1dfeb;
+   border: 1px solid #521137;
+   outline: 0;
+   color: #646464;
+   font-weight: normal;
+   text-decoration: none;
+}
+
+.Sayfalamapasif  a:link, .Sayfalamapasif a:hover, .Sayfalamapasif a:visited, .Sayfalamapasif a:active{
+   color: #646464;
+   text-decoration: none;
+}
+/* ürünler sayfaları biçimlendirmeleri*/
+
+#UrunGuncelleTamSayfaCerceveAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+    padding: 0;
+  border:none;
+  outline: none;
+ }
+ @media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #UrunGuncelleTamSayfaCerceveAlani{ /* body alanı için xl cihazda 14px olsun*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+   }
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+   #UrunGuncelleTamSayfaCerceveAlani{ 
+      padding-top: 5px;
+        padding-bottom: 5px;
+   }
+}
+#UrunGuncelleTamSayfaCerceveSinirlamaAlani{
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  vertical-align: middle;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #UrunGuncelleTamSayfaCerceveSinirlamaAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(100% - 52px);
+    width: -moz-calc(100% - 52px); /*mozillya göre*/
+    width: -o-calc(100% - 52px);/*operaya göre*/
+    width: -ms-calc(100% - 52px);
+    width: calc(100% - 52px);
+    min-width: -webkit-calc(100% - 52px);
+    min-width: -moz-calc(100% - 52px); /*mozillya göre*/
+    min-width: -o-calc(100% - 52px);/*operaya göre*/
+    min-width: -ms-calc(100% - 52px);
+    min-width: calc(100% - 52px);
+    max-width: -webkit-calc(100% - 52px);
+    max-width: -moz-calc(100% - 52px); /*mozillya göre*/
+    max-width: -o-calc(100% - 52px);/*operaya göre*/
+    max-width: -ms-calc(100% - 52px);
+    max-width: calc(100% - 52px);/* 12 idi 20 20 de padding verdik burada da 20=52 */
+    padding:20px;
+
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #UrunGuncelleTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 48px);/* 18 + 18+ 12=48*/
+    width: -moz-calc(100% - 48px); /*mozillya göre*/
+    width: -o-calc(100% - 48px);/*operaya göre*/
+    width: -ms-calc(100% - 48px);
+    width: calc(100% - 48px);
+    min-width: -webkit-calc(100% - 48px);
+    min-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    min-width: -o-calc(100% - 48px);/*operaya göre*/
+    min-width: -ms-calc(100% - 48px);
+    min-width: calc(100% - 48px);
+    max-width: -webkit-calc(100% - 48px);
+    max-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    max-width: -o-calc(100% - 48px);/*operaya göre*/
+    max-width: -ms-calc(100% - 48px);
+    max-width: calc(100% - 48px);
+     padding:18px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #UrunGuncelleTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 44px);
+    width: -moz-calc(100% - 44px); /*mozillya göre*/
+    width: -o-calc(100% - 44px);/*operaya göre*/
+    width: -ms-calc(100% - 44px);
+    width: calc(100% - 44px);
+    min-width: -webkit-calc(100% - 44px);
+    min-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    min-width: -o-calc(100% - 44px);/*operaya göre*/
+    min-width: -ms-calc(100% - 44px);
+    min-width: calc(100% - 44px);
+    max-width: -webkit-calc(100% - 44px);
+    max-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    max-width: -o-calc(100% - 44px);/*operaya göre*/
+    max-width: -ms-calc(100% - 44px);
+    max-width: calc(100% - 44px);
+     padding:16px;
+   }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){ /* s cihaz için*/
+   #UrunGuncelleTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px); /*mozillya göre*/
+    width: -o-calc(100% - 40px);/*operaya göre*/
+    width: -ms-calc(100% - 40px);
+    width: calc(100% - 40px);
+    min-width: -webkit-calc(100% - 40px);
+    min-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    min-width: -o-calc(100% - 40px);/*operaya göre*/
+    min-width: -ms-calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    max-width: -webkit-calc(100% - 40px);
+    max-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    max-width: -o-calc(100% - 40px);/*operaya göre*/
+    max-width: -ms-calc(100% - 40px);
+    max-width: calc(100% - 40px);
+     padding:14px;
+   }
+}
+@media only screen and (max-width: 574px){ /* xs cihaz için*/
+   #UrunGuncelleTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 36px);
+    width: -moz-calc(100% - 36px); /*mozillya göre*/
+    width: -o-calc(100% - 36px);/*operaya göre*/
+    width: -ms-calc(100% - 36px);
+    width: calc(100% - 36px);
+    min-width: -webkit-calc(100% - 36px);
+    min-width: -moz-calc(100% - 36px); /*mozillya göre*/
+    min-width: -o-calc(100% - 36px);/*operaya göre*/
+    min-width: -ms-calc(100% - 36px);
+    min-width: calc(100% - 36px);
+    max-width: -webkit-calc(100% - 36px);
+    max-width: -moz-calc(100% - 36px); /*mozillya göre*/
+    max-width: -o-calc(100% - 36px);/*operaya göre*/
+    max-width: -ms-calc(100% - 36px);
+    max-width: calc(100% - 36px);
+     padding:12px;
+   }
+}
+.UrunlerFormSatirAlani{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+
+.UrunlerFormBaslikMetni{
+  display: inline-block;
+  float: left;
+   width: 150px;
+    min-width:150px;
+    max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  padding-top:10px;
+  padding-bottom: 2px; 
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunlerFormBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunlerFormBaslikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunlerFormBaslikMetni{ 
+    font-size: 12px;
+   }
+}
+.UrunlerFormTextInputAlani{
+  display: block;
+  float: left;
+  width: -webkit-calc(100% - 150px);
+    width: -moz-calc(100% - 150px); /*mozillya göre*/
+    width: -o-calc(100% - 150px);/*operaya göre*/
+    width: -ms-calc(100% - 150px);
+    width: calc(100% - 150px);
+    min-width: -webkit-calc(100% - 150px);
+    min-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    min-width: -o-calc(100% - 150px);/*operaya göre*/
+    min-width: -ms-calc(100% - 150px);
+    min-width: calc(100% - 150px);
+    max-width: -webkit-calc(100% - 150px);
+    max-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    max-width: -o-calc(100% - 150px);/*operaya göre*/
+    max-width: -ms-calc(100% - 150px);
+    max-width: calc(100% - 150px);
+    height: 33px; /*ideal uzunluk*/
+    min-height: 33px;
+    max-height: 33px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 120%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunlerFormTextInputAlani{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunlerFormTextInputAlani{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunlerFormTextInputAlani{ 
+    font-size: 12px;
+   }
+}
+
+.UrunlerFormSelectAlani{
+  display: block;
+  float: left;
+   /* sol sağ boşluk 20  2 de border*/
+ width: -webkit-calc(100% - 150px);
+    width: -moz-calc(100% - 150px); /*mozillya göre*/
+    width: -o-calc(100% - 150px);/*operaya göre*/
+    width: -ms-calc(100% - 150px);
+    width: calc(100% - 150px);
+    min-width: -webkit-calc(100% - 150px);
+    min-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    min-width: -o-calc(100% - 150px);/*operaya göre*/
+    min-width: -ms-calc(100% - 150px);
+    min-width: calc(100% - 150px);
+    max-width: -webkit-calc(100% - 150px);
+    max-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    max-width: -o-calc(100% - 150px);/*operaya göre*/
+    max-width: -ms-calc(100% - 150px);
+    max-width: calc(100% - 150px);
+    height: 33px; /*ideal uzunluk*/
+    min-height: 33px;
+    max-height: 33px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    background-color: #fff;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 120%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunlerFormSelectAlani{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunlerFormSelectAlani{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunlerFormSelectAlani{ 
+    font-size: 12px;
+   }
+}
+.UrunlerVaryantAlani{
+  display: block;
+  float: left;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  margin-right: 5px;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunlerVaryantAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(50% - 5px);
+    width: -moz-calc(50% - 5px); /*mozillya göre*/
+    width: -o-calc(50% - 5px);/*operaya göre*/
+    width: -ms-calc(50% - 5px);
+    width: calc(50% - 5px);
+    min-width: -webkit-calc(50% - 5px);
+    min-width: -moz-calc(50% - 5px); /*mozillya göre*/
+    min-width: -o-calc(50% - 5px);/*operaya göre*/
+    min-width: -ms-calc(50% - 5px);
+    min-width: calc(50% - 5px);
+    max-width: -webkit-calc(50% - 5px);
+    max-width: -moz-calc(50% - 5px); /*mozillya göre*/
+    max-width: -o-calc(50% - 5px);/*operaya göre*/
+    max-width: -ms-calc(50% - 5px);
+    max-width: calc(50% - 5px);
+   }
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+    .UrunlerVaryantAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(50% - 5px);
+    width: -moz-calc(50% - 5px); /*mozillya göre*/
+    width: -o-calc(50% - 5px);/*operaya göre*/
+    width: -ms-calc(50% - 5px);
+    width: calc(50% - 5px);
+    min-width: -webkit-calc(50% - 5px);
+    min-width: -moz-calc(50% - 5px); /*mozillya göre*/
+    min-width: -o-calc(50% - 5px);/*operaya göre*/
+    min-width: -ms-calc(50% - 5px);
+    min-width: calc(50% - 5px);
+    max-width: -webkit-calc(50% - 5px);
+    max-width: -moz-calc(50% - 5px); /*mozillya göre*/
+    max-width: -o-calc(50% - 5px);/*operaya göre*/
+    max-width: -ms-calc(50% - 5px);
+    max-width: calc(50% - 5px);
+   }
+}
+
+@media only screen  and (max-width: 767px){ /* s cihaz için*/
+  .UrunlerVaryantAlani{ 
+    width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+   }
+}
+.UrunlerStokAlani{
+  display: block;
+  float: right;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: 5px;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color:#fff;
+  text-align: left;
+  vertical-align: top;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunlerStokAlani{ 
+    width: -webkit-calc(50% - 5px);
+    width: -moz-calc(50% - 5px); /*mozillya göre*/
+    width: -o-calc(50% - 5px);/*operaya göre*/
+    width: -ms-calc(50% - 5px);
+    width: calc(50% - 5px);
+    min-width: -webkit-calc(50% - 5px);
+    min-width: -moz-calc(50% - 5px); /*mozillya göre*/
+    min-width: -o-calc(50% - 5px);/*operaya göre*/
+    min-width: -ms-calc(50% - 5px);
+    min-width: calc(50% - 5px);
+    max-width: -webkit-calc(50% - 5px);
+    max-width: -moz-calc(50% - 5px); /*mozillya göre*/
+    max-width: -o-calc(50% - 5px);/*operaya göre*/
+    max-width: -ms-calc(50% - 5px);
+    max-width: calc(50% - 5px);
+   }
+   
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+   .UrunlerStokAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(50% - 5px);
+    width: -moz-calc(50% - 5px); /*mozillya göre*/
+    width: -o-calc(50% - 5px);/*operaya göre*/
+    width: -ms-calc(50% - 5px);
+    width: calc(50% - 5px);
+    min-width: -webkit-calc(50% - 5px);
+    min-width: -moz-calc(50% - 5px); /*mozillya göre*/
+    min-width: -o-calc(50% - 5px);/*operaya göre*/
+    min-width: -ms-calc(50% - 5px);
+    min-width: calc(50% - 5px);
+    max-width: -webkit-calc(50% - 5px);
+    max-width: -moz-calc(50% - 5px); /*mozillya göre*/
+    max-width: -o-calc(50% - 5px);/*operaya göre*/
+    max-width: -ms-calc(50% - 5px);
+    max-width: calc(50% - 5px);
+   
+   }
+}
+
+@media only screen and (max-width: 767px){ /* s cihaz için*/
+  .UrunlerStokAlani{ 
+    width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+   }
+}
+.UrunlerVaryantFormBaslikMetni{
+  display: inline-block;
+  float: left;
+   width: 150px;
+    min-width:150px;
+    max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  padding-top:10px;
+  padding-bottom: 2px; 
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunlerVaryantFormBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunlerVaryantFormBaslikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunlerVaryantFormBaslikMetni{ 
+    font-size: 12px;
+   }
+}
+.UrunlerVaryantFormTextInputAlani{
+  display: inline-block;
+  float: left;
+  width: -webkit-calc(100% - 150px);
+    width: -moz-calc(100% - 150px); /*mozillya göre*/
+    width: -o-calc(100% - 150px);/*operaya göre*/
+    width: -ms-calc(100% - 150px);
+    width: calc(100% - 150px);
+    min-width: -webkit-calc(100% - 150px);
+    min-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    min-width: -o-calc(100% - 150px);/*operaya göre*/
+    min-width: -ms-calc(100% - 150px);
+    min-width: calc(100% - 150px);
+    max-width: -webkit-calc(100% - 150px);
+    max-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    max-width: -o-calc(100% - 150px);/*operaya göre*/
+    max-width: -ms-calc(100% - 150px);
+    max-width: calc(100% - 150px);
+    height: 33px; /*ideal uzunluk*/
+    min-height: 33px;
+    max-height: 33px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 120%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UrunlerVaryantFormTextInputAlani{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UrunlerVaryantFormTextInputAlani{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UrunlerVaryantFormTextInputAlani{ 
+    font-size: 12px;
+   }
+}
+
+
+
+
+.FormSatirAlani{
+  display: block;
+  width: -webkit-calc(100% - 200px);
+    width: -moz-calc(100% - 200px); /*mozillya göre*/
+    width: -o-calc(100% - 200px);/*operaya göre*/
+    width: -ms-calc(100% - 200px);
+    width: calc(100% - 200px);
+    min-width: -webkit-calc(100% - 200px);
+    min-width: -moz-calc(100% - 200px); /*mozillya göre*/
+    min-width: -o-calc(100% - 200px);/*operaya göre*/
+    min-width: -ms-calc(100% - 200px);
+    min-width: calc(100% - 200px);
+    max-width: -webkit-calc(100% - 200px);
+    max-width: -moz-calc(100% - 200px); /*mozillya göre*/
+    max-width: -o-calc(100% - 200px);/*operaya göre*/
+    max-width: -ms-calc(100% - 200px);
+    max-width: calc(100% - 200px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.FormSelectAlani{
+  display: block;
+  float: left;
+   /* sol sağ boşluk 20  2 de border*/
+ width: -webkit-calc(100% - 150px);
+    width: -moz-calc(100% - 150px); /*mozillya göre*/
+    width: -o-calc(100% - 150px);/*operaya göre*/
+    width: -ms-calc(100% - 150px);
+    width: calc(100% - 150px);
+    min-width: -webkit-calc(100% - 150px);
+    min-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    min-width: -o-calc(100% - 150px);/*operaya göre*/
+    min-width: -ms-calc(100% - 150px);
+    min-width: calc(100% - 150px);
+    max-width: -webkit-calc(100% - 150px);
+    max-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    max-width: -o-calc(100% - 150px);/*operaya göre*/
+    max-width: -ms-calc(100% - 150px);
+    max-width: calc(100% - 150px);
+    height: 33px; /*ideal uzunluk*/
+    min-height: 33px;
+    max-height: 33px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    background-color: #fff;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 120%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .FormSelectAlani{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .FormSelectAlani{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .FormSelectAlani{ 
+    font-size: 12px;
+   }
+}
+
+.textAreaAlanlari{
+  display: block;
+  float: left;
+   /* sol sağ boşluk 20  2 de border*/
+   width: -webkit-calc(100% - 150px);
+    width: -moz-calc(100% - 150px); /*mozillya göre*/
+    width: -o-calc(100% - 150px);/*operaya göre*/
+    width: -ms-calc(100% - 150px);
+    width: calc(100% - 150px);
+    min-width: -webkit-calc(100% - 150px);
+    min-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    min-width: -o-calc(100% - 150px);/*operaya göre*/
+    min-width: -ms-calc(100% - 150px);
+    min-width: calc(100% - 150px);
+    max-width: -webkit-calc(100% - 150px);
+    max-width: -moz-calc(100% - 150px); /*mozillya göre*/
+    max-width: -o-calc(100% - 150px);/*operaya göre*/
+    max-width: -ms-calc(100% - 150px);
+    max-width: calc(100% - 150px);
+    height: 100px; /*ideal uzunluk*/
+    min-height: 100px;
+    max-height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 120%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .textAreaAlanlari{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .textAreaAlanlari{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .textAreaAlanlari{ 
+    font-size: 12px;
+   }
+}
+
+
+
+
+
+/* üye işlemleri biçimlendrimesi*/
+#UyelerTamSayfaCerceveAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0;
+  border:none;
+  outline: none;
+  background-color: #fff;/*f1dfeb*/
+ }
+ @media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #UyelerTamSayfaCerceveAlani{ /* body alanı için xl cihazda 14px olsun*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+   }
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+   #UyelerTamSayfaCerceveAlani{ 
+      padding-top: 5px;
+        padding-bottom: 5px;
+   }
+}
+#UyelerTamSayfaCerceveSinirlamaAlani{
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color:#fff;
+  vertical-align: middle;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   #UyelerTamSayfaCerceveSinirlamaAlani{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px); /*mozillya göre*/
+    width: -o-calc(100% - 50px);/*operaya göre*/
+    width: -ms-calc(100% - 50px);
+    width: calc(100% - 50px);
+    min-width: -webkit-calc(100% - 50px);
+    min-width: -moz-calc(100% - 50px); /*mozillya göre*/
+    min-width: -o-calc(100% - 50px);/*operaya göre*/
+    min-width: -ms-calc(100% - 50px);
+    min-width: calc(100% - 50px);
+    max-width: -webkit-calc(100% - 50px);
+    max-width: -moz-calc(100% - 50px); /*mozillya göre*/
+    max-width: -o-calc(100% - 50px);/*operaya göre*/
+    max-width: -ms-calc(100% - 50px);
+    max-width: calc(100% - 50px);/* 12 idi 20 20 de padding verdik burada da 20=52 */
+    padding:20px;
+
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   #UyelerTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 48px);/* 18 + 18+ 12=48*/
+    width: -moz-calc(100% - 48px); /*mozillya göre*/
+    width: -o-calc(100% - 48px);/*operaya göre*/
+    width: -ms-calc(100% - 48px);
+    width: calc(100% - 48px);
+    min-width: -webkit-calc(100% - 48px);
+    min-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    min-width: -o-calc(100% - 48px);/*operaya göre*/
+    min-width: -ms-calc(100% - 48px);
+    min-width: calc(100% - 48px);
+    max-width: -webkit-calc(100% - 48px);
+    max-width: -moz-calc(100% - 48px); /*mozillya göre*/
+    max-width: -o-calc(100% - 48px);/*operaya göre*/
+    max-width: -ms-calc(100% - 48px);
+    max-width: calc(100% - 48px);
+     padding:18px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){ /* m cihaz için*/
+   #UyelerTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 44px);
+    width: -moz-calc(100% - 44px); /*mozillya göre*/
+    width: -o-calc(100% - 44px);/*operaya göre*/
+    width: -ms-calc(100% - 44px);
+    width: calc(100% - 44px);
+    min-width: -webkit-calc(100% - 44px);
+    min-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    min-width: -o-calc(100% - 44px);/*operaya göre*/
+    min-width: -ms-calc(100% - 44px);
+    min-width: calc(100% - 44px);
+    max-width: -webkit-calc(100% - 44px);
+    max-width: -moz-calc(100% - 44px); /*mozillya göre*/
+    max-width: -o-calc(100% - 44px);/*operaya göre*/
+    max-width: -ms-calc(100% - 44px);
+    max-width: calc(100% - 44px);
+     padding:16px;
+   }
+}
+@media only screen  and (max-width: 767px){ /* s cihaz için*/
+   #UyelerTamSayfaCerceveSinirlamaAlani{ 
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px); /*mozillya göre*/
+    width: -o-calc(100% - 40px);/*operaya göre*/
+    width: -ms-calc(100% - 40px);
+    width: calc(100% - 40px);
+    min-width: -webkit-calc(100% - 40px);
+    min-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    min-width: -o-calc(100% - 40px);/*operaya göre*/
+    min-width: -ms-calc(100% - 40px);
+    min-width: calc(100% - 40px);
+    max-width: -webkit-calc(100% - 40px);
+    max-width: -moz-calc(100% - 40px); /*mozillya göre*/
+    max-width: -o-calc(100% - 40px);/*operaya göre*/
+    max-width: -ms-calc(100% - 40px);
+    max-width: calc(100% - 40px);
+     padding:14px;
+   }
+}
+.UyelerBaslik{
+  display: block;
+    width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    width: -moz-calc(100% - 10px);/* bnm ki 250 +5 +30=285*/
+    width: -o-calc(100% - 10px);
+    width: -ms-calc(100% - 10px);
+    min-width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    min-width: -moz-calc(100% - 10px);
+    min-width: -o-calc(100% - 10px);
+    min-width: -ms-calc(100% - 10px);
+    max-width:-webkit-calc(100% - 10px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    max-width: -moz-calc(100% - 10px);
+    max-width: -o-calc(100% - 10px);
+    max-width: -ms-calc(100% - 10px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding: 10px 5px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+    background-color: #f1dfeb;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-decoration: none;
+  text-align: center;
+  line-height: 120%;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UyelerBaslik{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .UyelerBaslik{ 
+     font-size: 13px;
+   }
+}
+@media only screen  and (max-width: 991px){ /* m cihaz için*/
+   .UyelerBaslik{ 
+    font-size: 12px;
+
+   }
+}
+.UyeIslemlerAlani{
+   position: relative;
+    display: block;
+    width:-webkit-calc(100% - 118px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    width: -moz-calc(100% - 118px);/* bnm ki 250 +5 +30=285*/
+    width: -o-calc(100% - 118px);
+    width: -ms-calc(100% - 118px);
+    min-width:-webkit-calc(100% - 118px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    min-width: -moz-calc(100% - 118px);
+    min-width: -o-calc(100% - 118px);
+    min-width: -ms-calc(100% - 118px);
+    max-width:-webkit-calc(100% - 118px); /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/
+    max-width: -moz-calc(100% - 118px);
+    max-width: -o-calc(100% - 118px);
+    max-width: -ms-calc(100% - 118px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px dashed #521137;
+  outline: none;
+  background-color:#fff;
+  text-align: left;
+  vertical-align: top;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UyeIslemlerAlani{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .UyeIslemlerAlani{ 
+     font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m cihaz için*/
+   .UyeIslemlerAlani{ 
+    font-size: 12px;
+
+   }
+}
+.SiparisDetayAlaniSag{
+  display: block;
+  float: left;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .SiparisDetayAlaniSag{ /* body alanı için xl cihazda 14px olsun*/
+     width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+   }
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+    .SiparisDetayAlaniSag{ /* body alanı için xl cihazda 14px olsun*/
+     width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+   }
+}
+
+@media only screen  and (max-width: 767px){ /* s cihaz için*/
+  .SiparisDetayAlaniSag{ 
+    width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+   }
+}
+.SiparisDetayAlaniSol{
+  display: block;
+  float: right;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color:#fff;
+  text-align: left;
+  vertical-align: top;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .SiparisDetayAlaniSol{ 
+     width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+   }
+   
+}
+@media only screen and (max-width: 1199px){ /* l cihaz için*/
+   .SiparisDetayAlaniSol{ /* body alanı için xl cihazda 14px olsun*/
+   width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+   
+   }
+}
+@media only screen and (max-width: 767px){ /* s cihaz için*/
+  .SiparisDetayAlaniSol{ 
+    width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+   }
+}
+.UyeDetayBaslikMetni{
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: top;
+  line-height: 180%;
+
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UyeDetayBaslikMetni{ /* body alanı için xl cihazda 14px olsun*/    
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UyeDetayBaslikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UyeDetayBaslikMetni{ 
+    font-size: 12px;
+   }
+}
+.UyeDetayIcerikMetni{
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  line-height: 180%;
+  
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .UyeDetayIcerikMetni{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .UyeDetayIcerikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .UyeDetayIcerikMetni{ 
+    font-size: 12px;
+   }
+}
+
+/*banka hesapları sayfakarı biçimlnedirme*/
+.BankaResimAlani{
+  display: block;
+  float: left;
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 6px;
+  margin-top: 20px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  text-align: left;
+  vertical-align: top;
+  background-color: #fff;
+}
+.BankaResimAlani img{
+  display: block;
+  float: left;
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+ height: auto;
+    margin-top: 20px;
+
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+
+/*sözleşme ve metinler biç*/
+.MetinDetaylari{
+   display: inline-block;
+   height:auto;  
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: top;
+}@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .MetinDetaylari{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(100% - 72px);
+    width: -moz-calc(100% - 72px); /*mozillya göre*/
+    width: -o-calc(100% - 72px);/*operaya göre*/
+    width: -ms-calc(100% - 72px);
+    width: calc(100% - 72px);
+    min-width: -webkit-calc(100% - 72px);
+    min-width: -moz-calc(100% - 72px); /*mozillya göre*/
+    min-width: -o-calc(100% - 72px);/*operaya göre*/
+    min-width: -ms-calc(100% - 72px);
+    min-width: calc(100% - 72px);
+    max-width: -webkit-calc(100% - 72px);
+    max-width: -moz-calc(100% - 72px); /*mozillya göre*/
+    max-width: -o-calc(100% - 72px);/*operaya göre*/
+    max-width: -ms-calc(100% - 72px);
+    max-width: calc(100% - 72px);
+   }
+}
+@media only screen  and (max-width: 1199px){ /* l cihaz için*/
+   .MetinDetaylari{ 
+  width: -webkit-calc(100% - 78px);
+    width: -moz-calc(100% - 78px); /*mozillya göre*/
+    width: -o-calc(100% - 78px);/*operaya göre*/
+    width: -ms-calc(100% - 78px);
+    width: calc(100% - 78px);
+    min-width: -webkit-calc(100% - 78px);
+    min-width: -moz-calc(100% - 78px); /*mozillya göre*/
+    min-width: -o-calc(100% - 78px);/*operaya göre*/
+    min-width: -ms-calc(100% - 78px);
+    min-width: calc(100% - 78px);
+    max-width: -webkit-calc(100% - 78px);
+    max-width: -moz-calc(100% - 78px); /*mozillya göre*/
+    max-width: -o-calc(100% - 78px);/*operaya göre*/
+    max-width: -ms-calc(100% - 78px);
+    max-width: calc(100% - 78px);
+   }
+}
+@media only screen  and (max-width: 767px){ /* s cihaz için*/
+   .MetinDetaylari{ 
+  width: -webkit-calc(100% - 84px);
+    width: -moz-calc(100% - 84px); /*mozillya göre*/
+    width: -o-calc(100% - 84px);/*operaya göre*/
+    width: -ms-calc(100% - 84px);
+    width: calc(100% - 84px);
+    min-width: -webkit-calc(100% - 84px);
+    min-width: -moz-calc(100% - 84px); /*mozillya göre*/
+    min-width: -o-calc(100% - 84px);/*operaya göre*/
+    min-width: -ms-calc(100% - 84px);
+    min-width: calc(100% - 84px);
+    max-width: -webkit-calc(100% - 84px);
+    max-width: -moz-calc(100% - 84px); /*mozillya göre*/
+    max-width: -o-calc(100% - 84px);/*operaya göre*/
+    max-width: -ms-calc(100% - 84px);
+    max-width: calc(100% - 84px);
+   }
+}
+.MetinDetayAlani{
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color:#fff;
+  text-align: left;
+  vertical-align: top;
+}
+.MetintextAreaAlanlari{
+  display: block;
+  float: left;
+   width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px); /*mozillya göre*/
+    width: -o-calc(100% - 50px);/*operaya göre*/
+    width: -ms-calc(100% - 50px);
+    width: calc(100% - 50px);
+    min-width: -webkit-calc(100% - 50px);
+    min-width: -moz-calc(100% - 50px); /*mozillya göre*/
+    min-width: -o-calc(100% - 50px);/*operaya göre*/
+    min-width: -ms-calc(100% - 50px);
+    min-width: calc(100% - 50px);
+    max-width: -webkit-calc(100% - 50px);
+    max-width: -moz-calc(100% - 50px); /*mozillya göre*/
+    max-width: -o-calc(100% - 50px);/*operaya göre*/
+    max-width: -ms-calc(100% - 50px);
+    max-width: calc(100% - 50px);
+    height: 200px; 
+    min-height: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f1dfeb;
+    border:none;
+    border: 1px solid #521137;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    outline: none;/* inputa taznak için tıklıyosunuz bi border çiziyo onu kappattım*/
+    font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  line-height: 150%;
+  vertical-align: top;
+  text-align: left;
+  text-decoration: none;
+  color:#521137;
+}
+
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .MetintextAreaAlanlari{ /* body alanı için xl cihazda 14px olsun*/
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .MetintextAreaAlanlari{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .MetintextAreaAlanlari{ 
+    font-size: 12px;
+   }
+}
+
+/* KARGO AYARŞLARI*/
+.KargoResimAlani{
+  display: inline-block;
+  float: left;
+  width: 144px;
+  min-width: 144px;
+  max-width: 144px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  border:1px dashed #521137;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.KargoResimAlani img{
+  display: block;
+  width: 144px;
+  min-width: 144px;
+  max-width: 144px;
+  height: 70px;
+  min-height: 70px;
+  max-height: 70px;
+  margin: 0 auto;
+  margin-top: 23px;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+
+.KargoIcerikMetni{
+  display: block;
+  float: left;
+    width:-webkit-calc(100% - 154px); 
+  width: -moz-calc(100% - 154px);
+  width: -o-calc(100% - 154px);
+  width: -ms-calc(100% - 154px);
+  min-width:-webkit-calc(100% - 154px); 
+  min-width: -moz-calc(100% - 154px);
+  min-width: -o-calc(100% - 154px);
+  min-width: -ms-calc(100% - 154px);
+  max-width:-webkit-calc(100% - 154px); 
+  max-width: -moz-calc(100% - 154px);
+  max-width: -o-calc(100% - 154px);
+  max-width: -ms-calc(100% - 154px);
+  height: auto;
+  margin: 0 auto;
+  margin-left: 10px;
+   margin-top:35px;
+  padding: 0;
+    overflow: hidden;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial "Helvatica Neue", Helvatica, sans-serif; /*open sans yoksa arial olsun-*/
+    color: #521137;
+  font-style: normal;
+  font-variant: normal;
+  font-weight:600; 
+  text-align: left;
+  text-decoration: none;
+  
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .KargoIcerikMetni{ /* body alanı için xl cihazda 14px olsun*/
+   
+     font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+  .KargoIcerikMetni{ 
+    font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m  s xscihaz için*/
+   .KargoIcerikMetni{ 
+    font-size: 12px;
+   }
+}
+
+/*BANNER AYARLARI*/
+.BannerResimAlani{
+  display: inline-block;
+  width: auto;
+  height:auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.BannerResimAlani img{
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  margin: 0 auto;
+  margin-top: 23px;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.BannerDetaylari{
+   display: inline-block;
+   height:auto;  
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0;
+  padding-left: 6px;
+  margin-right: 10px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: top;
+}@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .BannerDetaylari{ /* body alanı için xl cihazda 14px olsun*/
+    width: -webkit-calc(100% - 316px);
+    width: -moz-calc(100% - 316px); /*mozillya göre*/
+    width: -o-calc(100% - 316px);/*operaya göre*/
+    width: -ms-calc(100% - 316px);
+    width: calc(100% - 316px);
+    min-width: -webkit-calc(100% - 316px);
+    min-width: -moz-calc(100% - 316px); /*mozillya göre*/
+    min-width: -o-calc(100% - 316px);/*operaya göre*/
+    min-width: -ms-calc(100% - 316px);
+    min-width: calc(100% - 316px);
+    max-width: -webkit-calc(100% - 316px);
+    max-width: -moz-calc(100% - 316px); /*mozillya göre*/
+    max-width: -o-calc(100% - 316px);/*operaya göre*/
+    max-width: -ms-calc(100% - 316px);
+    max-width: calc(100% - 316px);
+   }
+}
+@media only screen  and (max-width: 1199px){ /* l cihaz için*/
+   .BannerDetaylari{ 
+   width: -webkit-calc(100% - 316px);
+    width: -moz-calc(100% - 316px); /*mozillya göre*/
+    width: -o-calc(100% - 316px);/*operaya göre*/
+    width: -ms-calc(100% - 316px);
+    width: calc(100% - 316px);
+    min-width: -webkit-calc(100% - 316px);
+    min-width: -moz-calc(100% - 316px); /*mozillya göre*/
+    min-width: -o-calc(100% - 316px);/*operaya göre*/
+    min-width: -ms-calc(100% - 316px);
+    min-width: calc(100% - 316px);
+    max-width: -webkit-calc(100% - 316px);
+    max-width: -moz-calc(100% - 316px); /*mozillya göre*/
+    max-width: -o-calc(100% - 316px);/*operaya göre*/
+    max-width: -ms-calc(100% - 316px);
+    max-width: calc(100% - 316px);
+ 
+   }
+}
+@media only screen  and (max-width: 574px){ /* s cihaz için*/
+   .BannerDetaylari{ 
+    width:100%;
+    min-width:100%;
+    max-width:100%);
+   }
+}
+
+.YonetimIslemlerAlani{
+   position: relative;
+    display: block;
+    width:100%;
+    min-width:100%; /* 195 + 5 =200 yeter ama yapışmasın 235 verdi resmin genişliğine göre veronunkş 195*/    
+    max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 6px;
+  margin-top: 20px;
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px dashed #521137;
+  outline: none;
+  background-color:#fff;
+  text-align: left;
+  vertical-align: top;
+}
+@media only screen and (min-width: 1200px){ /* xl cihaz için*/
+   .YonetimIslemlerAlani{ /* body alanı için xl cihazda 14px olsun*/
+    font-size: 14px;
+   }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){ /* l cihaz için*/
+   .YonetimIslemlerAlani{ 
+     font-size: 13px;
+   }
+}
+@media only screen and (max-width: 991px){ /* m cihaz için*/
+   .YonetimIslemlerAlani{ 
+    font-size: 12px;
+
+   }
+}
+
+/* yorumlar*/
+.YorumPuanAlani{
+  display: inline-block;
+  width: 112px;
+  min-width: 112px;
+  max-width: 112px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
+.YorumPuanAlani img{
+  display: inline-block;
+  width: 112px;
+  min-width: 112px;
+  max-width: 112px;
+  height: 25px;
+  min-height: 25px;
+  max-height: 25px;
+  margin: 0 auto;
+  margin-top: 23px;
+  padding: 0;
+  padding-left: 6px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+}
